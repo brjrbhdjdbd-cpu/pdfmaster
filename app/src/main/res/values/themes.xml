@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PDFMaster" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/acrobat_red</item>
+        <item name="colorPrimaryVariant">@color/acrobat_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/acrobat_red</item>
+        <item name="android:statusBarColor">@color/acrobat_red</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

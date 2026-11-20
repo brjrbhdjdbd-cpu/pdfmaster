@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PDF Master</string>
+    <string name="open_pdf">Open PDF</string>
+    <string name="open_pdf_desc">Browse and view PDF files</string>
+    <string name="tools">Tools</string>
+    <string name="tools_desc">Compress, merge, sign &amp; more</string>
+    <string name="tagline">All PDF tools — completely free</string>
+</resources>
