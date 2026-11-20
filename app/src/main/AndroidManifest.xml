@@ -26,6 +26,7 @@
         <activity android:name=".tools.MergeActivity" android:exported="false" />
         <activity android:name=".tools.SignActivity" android:exported="false" />
         <activity android:name=".tools.OcrActivity" android:exported="false" />
+        <activity android:name=".tools.EditActivity" android:exported="false" />
 
     </application>
 </manifest>

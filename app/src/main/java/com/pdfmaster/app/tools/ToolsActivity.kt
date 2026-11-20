@@ -28,6 +28,9 @@ class ToolsActivity : AppCompatActivity() {
         binding.cardOcr.setOnClickListener {
             startActivity(Intent(this, OcrActivity::class.java))
         }
+        binding.cardEdit.setOnClickListener {
+            startActivity(Intent(this, EditActivity::class.java))
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean { finish(); return true }
