@@ -41,7 +41,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
 
     // PDF viewer
-    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'io.github.oothp:android-pdf-viewer:3.2.0-beta06'
 
     // PDF manipulation (merge, compress, split, encrypt)
     implementation 'com.tom-roush:pdfbox-android:2.0.27.0'
