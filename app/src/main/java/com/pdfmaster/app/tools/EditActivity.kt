@@ -64,7 +64,7 @@ class EditActivity : AppCompatActivity() {
         val uri = inputUri ?: return toast("Pick a PDF first")
         val pages = PageSelection.parse(binding.etPages.text.toString(), pageCount)
             ?: return toast("Invalid page numbers (max $pageCount)")
-        val deg = binding.sliderRotation.value.toInt() * 90
+        val deg = binding.sliderRotation.progress * 90
         val angle = when (deg) {
             0 -> 90
             1 -> 90

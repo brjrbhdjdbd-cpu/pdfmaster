@@ -47,7 +47,7 @@ class CompressActivity : AppCompatActivity() {
         }
         binding.btnCompress.isEnabled = false
         binding.tvResult.text = "Compressing..."
-        val quality = binding.sliderQuality.value.toInt()
+        val quality = binding.sliderQuality.progress
 
         lifecycleScope.launch {
             try {
