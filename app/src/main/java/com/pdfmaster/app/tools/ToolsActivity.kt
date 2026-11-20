@@ -1,7 +1,7 @@
 package com.pdfmaster.app.tools
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.pdfmaster.app.databinding.ActivityToolsBinding
 
@@ -13,26 +13,22 @@ class ToolsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityToolsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "Tools"
 
         binding.cardCompress.setOnClickListener {
-            Toast.makeText(this, "Compress: coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, CompressActivity::class.java))
         }
         binding.cardMerge.setOnClickListener {
-            Toast.makeText(this, "Merge: coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, MergeActivity::class.java))
         }
         binding.cardSign.setOnClickListener {
-            Toast.makeText(this, "Sign: coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, SignActivity::class.java))
         }
         binding.cardOcr.setOnClickListener {
-            Toast.makeText(this, "OCR: coming soon", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, OcrActivity::class.java))
         }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        finish()
-        return true
-    }
+    override fun onSupportNavigateUp(): Boolean { finish(); return true }
 }

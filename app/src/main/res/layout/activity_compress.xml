@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/bg_light">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick PDF file" />
+
+    <TextView
+        android:id="@+id/tvFileInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No file selected"
+        android:textSize="14sp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quality (lower = smaller file)"
+        android:textSize="14sp"
+        android:paddingTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/sliderQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="60" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCompress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Compress &amp; Save to Downloads" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:paddingTop="24dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.pdfmaster.app.databinding.ActivityMainBinding
 import com.pdfmaster.app.tools.ToolsActivity
 import com.pdfmaster.app.viewer.ViewerActivity
+import com.tom_roush.pdfbox.android.PDFBoxResourceLoader
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,13 +26,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        PDFBoxResourceLoader.init(applicationContext)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.cardViewPdf.setOnClickListener {
             pickPdf.launch("application/pdf")
         }
-
         binding.cardTools.setOnClickListener {
             startActivity(Intent(this, ToolsActivity::class.java))
         }

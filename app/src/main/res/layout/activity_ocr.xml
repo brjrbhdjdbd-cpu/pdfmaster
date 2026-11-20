@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/bg_light">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick PDF" />
+
+    <TextView
+        android:id="@+id/tvFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No file"
+        android:paddingVertical="8dp"
+        android:textSize="13sp"
+        android:textColor="@color/gray" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Extract Text (OCR)" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:fontFamily="monospace"
+            android:text="Result will appear here" />
+    </ScrollView>
+
+</LinearLayout>
